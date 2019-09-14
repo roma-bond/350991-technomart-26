@@ -68,16 +68,41 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Производители:</legend>
-            <input type="checkbox" name="brand" value="bosch" checked>Bosch<br>
-            <input type="checkbox" name="brand" value="interskol">Интерскол<br>
-            <input type="checkbox" name="brand" value="makita" checked>Makita<br>
-            <input type="checkbox" name="brand" value="dewalt">Dewalt<br>
-            <input type="checkbox" name="brand" value="hitachi">Hitachi<br>
+            <ul>
+              <li>
+                <input type="checkbox" name="bosch" id="brand-bosch" checked>
+                <label for="brand-bosch">Bosch</label>
+              </li>
+              <li>
+                <input type="checkbox" name="interskol" id="brand-interskol" >
+                <label for="brand-interskol">Интерскол</label>
+              </li>
+              <li>
+                <input type="checkbox" name="makita" id="brand-makita" checked>
+                <label for="brand-makita">Makita</label>
+              </li>
+              <li>
+                <input type="checkbox" name="dewalt" id="brand-dewalt">
+                <label for="brand-dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input type="checkbox" name="hitachi" id="brand-hitachi">
+                <label for="brand-hitachi">Hitachi</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset>
             <legend>Питание:</legend>
-            <input type="radio" name="power" value="battery" checked>Аккумуляторные<br>
-            <input type="radio" name="power" value="socket">Сетевые<br>
+            <ul>
+              <li>
+                <input type="radio" name="power" value="battery" id="power-battery" checked>
+                <label for="power-battery">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" name="power" value="socket" id="power-socket">
+                <label for="power-socket">Сетевые</label>
+              </li>
+            </ul>
           </fieldset>
           <button type="submit">Показать</button>
         </form>
