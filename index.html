@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -54,9 +53,9 @@
     <main>
       <h1 class="visually-hidden">Главная страница интернет-магазина Техномарт</h1>
 
-      <section>
+      <section class="offers">
         <h2 class="visually-hidden">Товары и услуги</h2>
-        <ul>
+        <ul class="offers-categories">
           <li>
             <p>Материалы</p>
             <a href="">На любой вкус</a>
@@ -70,7 +69,7 @@
             <a href="">Для стройки</a>
           </li>
         </ul>
-        <ul>
+        <ul class="offers-benefits">
           <li>
             <p>Скидки 50%</p>
             <a href="">На 350 товаров</a>
@@ -83,71 +82,75 @@
         <div class="slider">
           <h3>Дрели</h3>
           <p>Соседям на радость!</p>
-          <a href="catalog.html">Открыть каталог</a>
+          <a class="red-button" href="catalog.html">Открыть каталог</a>
         </div>
         <div class="slider">
           <h3>Перфораторы</h3>
           <p>Настоящие мужские игрушки</p>
-          <a href="catalog.html">Открыть каталог</a>
+          <a class="red-button" href="catalog.html">Открыть каталог</a>
         </div>
       </section>
 
-      <section>
-        <div>
+      <section class="popular-products">
+        <div class="popular-header">
           <h2>Популярные товары:</h2>
-          <a href="">Все популярные товары</a>
+          <a class="red-button" href="">Все популярные товары</a>
         </div>
         <ul>
           <li>
-            <article>
+            <article class="output-item">
               <h3>Перфоратор BOSCH BFG 9000</h3>
               <p>
                 <img src="img/perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
-                <a href="">Купить</a>
-                <a href="">В закладки</a>
+                <a class="output-item-buy" href="">Купить</a>
+                <a class="output-item-bookmark" href="">В закладки</a>
               </p>
               <del>32500 р.</del>
-              <span>25500 р.</span>
+              <span class="price">25500 р.</span>
             </article>
           </li>
           <li>
-            <article>
+            <article class="output-item">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <p>
                 <img src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-                <a href="">Купить</a>
-                <a href="">В закладки</a>
+                <a class="output-item-buy" href="">Купить</a>
+                <a class="output-item-bookmark" href="">В закладки</a>
               </p>
               <del>22500 р.</del>
-              <span>15500 р.</span>
+              <span class="price">15500 р.</span>
             </article>
           </li>
           <li>
-            <h3>Перфоратор BOSCH BFG 6000</h3>
-            <p>
-              <img src="img/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-              <a href="">Купить</a>
-              <a href="">В закладки</a>
-            </p>
-            <del>30500 р.</del>
-            <span>25500 р.</span>
+            <article class="output-item">
+              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <p>
+                <img src="img/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+                <a class="output-item-buy" href="">Купить</a>
+                <a class="output-item-bookmark" href="">В закладки</a>
+              </p>
+              <del>30500 р.</del>
+              <span class="price">25500 р.</span>
+            </article>
           </li>
           <li>
-            <h3>Перфоратор BOSCH BFG 2000</h3>
-            <p>
-              <img src="img/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-              <a href="">Купить</a>
-              <a href="">В закладки</a>
-            </p>
-            <span>12500 р.</span>
+            <article class="output-item">
+              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <p>
+                <img src="img/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+                <a class="output-item-buy" href="">Купить</a>
+                <a class="output-item-bookmark" href="">В закладки</a>
+              </p>
+              <span class="price">12500 р.</span>
+            </article>
           </li>
         </ul>
       </section>
 
-      <section>
-        <div>
+      <section class="popular-brands">
+        <div class="popular-header">
           <h2>Популярные производители:</h2>
-          <a href="">Все производители</a>
+          <a class="red-button" href="">Все производители</a>
         </div>
         <ul>
           <li><a href=""><img src="img/bosch.jpg" width="126" height="37" alt="BOSCH"></a></li>
@@ -161,30 +164,47 @@
         </ul>
       </section>
 
-      <section>
+      <section class="services">
         <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <p>
+          Хороший интернет-магазин отличается от плохого не только ценами<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
 
-        <ul>
-          <li><button type="button">Доставка</button></li>
+        <ul class="services-list">
+          <li><button class="services-active" type="button">Доставка</button></li>
           <li><button type="button">Гарантия</button></li>
           <li><button type="button">Кредит</button></li>
         </ul>
 
-        <section>
+        <section class="services-description">
           <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно!<br>
+            Ведь мы неплохо заработаем,<br>
+            поднимая его на ваш этаж!
+          </p>
         </section>
 
-        <section>
+        <section class="services-description">
           <h3>Гарантия</h3>
-          <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+          <p>
+            Если купленный у нас товар поломается или заискрит,<br>
+            а также в случае пожара, спровоцированного его возгоранием,<br>
+            вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+            сгоревший товар на новый.<br>
+            Дом уж восстановите как-нибудь сами.
+          </p>
         </section>
 
-        <section>
+        <section class="services-description">
           <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-          <button type="button">Отправить заявку</button>
+          <p>
+            Залезть в долговую яму стало проще!<br>
+            Кредитные консультанты придут вам на помощь.
+          </p>
+          <button class="red-button" type="button">Отправить заявку</button>
         </section>
       </section>
 

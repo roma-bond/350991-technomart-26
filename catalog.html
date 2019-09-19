@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -71,7 +70,7 @@
 
       <h2 class="catalog-title">Перфораторы</h2>
 
-      <section>
+      <section class="filter">
         <h3>Фильтр:</h3>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
@@ -124,14 +123,14 @@
         <section class="catalog-sort">
           <h3>Сортировка:</h3>
           <ul>
-            <li><a href="">По цене</a></li>
-            <li><a href="">По типу</a></li>
-            <li><a href="">По функционалу</a></li>
+            <li><a class="sort-option" href="">По цене</a></li>
+            <li><a class="sort-option" href="">По типу</a></li>
+            <li><a class="sort-option" href="">По функционалу</a></li>
           </ul>
 
           <ul>
-            <li><a href="">По возрастанию</a></li>
-            <li><a href="">По убыванию</a></li>
+            <li><a class="sort-option" href="">По возрастанию</a></li>
+            <li><a class="sort-option" href="">По убыванию</a></li>
           </ul>
         </section>
 
@@ -139,9 +138,9 @@
           <h3 class="visually-hidden">Список перфораторов</h3>
           <ul>
             <li>
-              <article>
+              <article class="output-item">
                 <h4>Перфоратор BOSCH BFG 3000</h4>
-                <p class="output-item">
+                <p>
                   <img src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                   <a class="output-item-buy" href="">Купить</a>
                   <a class="output-item-bookmark" href="">В закладки</a>
@@ -151,9 +150,9 @@
               </article>
             </li>
             <li>
-              <article>
+              <article class="output-item">
                 <h4>Перфоратор BOSCH BFG 6000</h4>
-                <p class="output-item">
+                <p>
                   <img src="img/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                   <a class="output-item-buy" href="">Купить</a>
                   <a class="output-item-bookmark" href="">В закладки</a>
@@ -163,9 +162,9 @@
               </article>
             </li>
             <li>
-              <article>
+              <article class="output-item">
                 <h4>Перфоратор BOSCH BFG 2000</h4>
-                <p class="output-item">
+                <p>
                   <img src="img/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                   <a class="output-item-buy" href="">Купить</a>
                   <a class="output-item-bookmark" href="">В закладки</a>
@@ -174,9 +173,9 @@
               </article>
             </li>
             <li>
-              <article>
+              <article class="output-item">
                 <h4>Перфоратор BOSCH BFG 3000</h4>
-                <p class="output-item">
+                <p>
                   <img src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                   <a class="output-item-buy" href="">Купить</a>
                   <a class="output-item-bookmark" href="">В закладки</a>
@@ -186,9 +185,9 @@
               </article>
             </li>
             <li>
-              <article>
+              <article class="output-item">
                 <h4>Перфоратор BOSCH BFG 6000</h4>
-                <p class="output-item">
+                <p>
                   <img src="img/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                   <a class="output-item-buy" href="">Купить</a>
                   <a class="output-item-bookmark" href="">В закладки</a>
@@ -198,9 +197,9 @@
               </article>
             </li>
             <li>
-              <article>
+              <article class="output-item">
                 <h4>Перфоратор BOSCH BFG 2000</h4>
-                <p class="output-item">
+                <p>
                   <img src="img/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                   <a class="output-item-buy" href="">Купить</a>
                   <a class="output-item-bookmark" href="">В закладки</a>
@@ -209,9 +208,9 @@
               </article>
             </li>
             <li>
-              <article>
+              <article class="output-item">
                 <h4>Перфоратор BOSCH BFG 3000</h4>
-                <p class="output-item">
+                <p>
                   <img src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                   <a class="output-item-buy" href="">Купить</a>
                   <a class="output-item-bookmark" href="">В закладки</a>
@@ -221,9 +220,9 @@
               </article>
             </li>
             <li>
-              <article>
+              <article class="output-item">
                 <h4>Перфоратор BOSCH BFG 6000</h4>
-                <p class="output-item">
+                <p>
                   <img src="img/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                   <a class="output-item-buy" href="">Купить</a>
                   <a class="output-item-bookmark" href="">В закладки</a>
@@ -233,9 +232,9 @@
               </article>
             </li>
             <li>
-              <article>
+              <article class="output-item">
                 <h4>Перфоратор BOSCH BFG 2000</h4>
-                <p class="output-item">
+                <p>
                   <img src="img/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                   <a class="output-item-buy" href="">Купить</a>
                   <a class="output-item-bookmark" href="">В закладки</a>
@@ -246,11 +245,11 @@
           </ul>
         </section>
 
-        <section>
-          <h3>Навигация по страницам отобранных товаров</h3>
+        <section class="pagination">
+          <h3 class="visually-hidden">Навигация по страницам отобранных товаров</h3>
           <a href="">Предыдущая</a>
           <ol>
-            <li><a>1</a></li>
+            <li><a class="active-page">1</a></li>
             <li><a href="">2</a></li>
             <li><a href="">3</a></li>
           </ol>
@@ -258,7 +257,7 @@
         </section>
       </div>
 
-      <article>
+      <article class="catalog-article">
         <h3>Пара слов о перфораторах</h3>
         <p>
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
