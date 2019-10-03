@@ -104,9 +104,16 @@
             <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
               <fieldset>
                 <legend>Цена:</legend>
-                <!-- Тут пока не определился, что именно делать -->
+                <div class="filter-range-indicator">
+                  <span class="filter-min-range"></span>
+                  <span class="filter-max-range"></span>
+                </div>
+                <div class="filter-range-price">
+                  <input class="filter-min-price" type="text" value="0">
+                  <input class="filter-max-price" type="text" value="30000">
+                </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-brand-type">
                 <legend>Производители:</legend>
                 <ul>
                   <li class="filter-option">
