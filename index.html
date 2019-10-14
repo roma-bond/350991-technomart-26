@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7cPT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header">
@@ -217,7 +217,52 @@
           </p>
 
           <div class="services-choice-wrapper">
-            <ul class="services-list">
+            <input class="services-slide-btn visually-hidden" type="radio" id="services-1" name="services-toggle" checked>
+            <input class="services-slide-btn visually-hidden" type="radio" id="services-2" name="services-toggle">
+            <input class="services-slide-btn visually-hidden" type="radio" id="services-3" name="services-toggle">
+
+            <div class="services-list">
+              <label class="services-button" for="services-1">Доставка</label>
+              <label class="services-button" for="services-2">Гарантия</label>
+              <label class="services-button" for="services-3">Кредит</label>
+            </div>
+
+            <ul class="services-description-list">
+              <li>
+                <section class="services-description services-description-1">
+                  <h3>Доставка</h3>
+                  <p>
+                    Мы с удовольствием доставим ваш товар прямо<br>
+                    к вашему подъезду совершенно бесплатно!<br>
+                    Ведь мы неплохо заработаем,<br>
+                    поднимая его на ваш этаж!
+                  </p>
+                </section>
+              </li>
+              <li>
+                <section class="services-description services-description-2">
+                  <h3>Гарантия</h3>
+                  <p>
+                    Если купленный у нас товар поломается или заискрит,<br>
+                    а также в случае пожара, спровоцированного его возгоранием,<br>
+                    вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                    сгоревший товар на новый.<br>
+                    Дом уж восстановите как-нибудь сами.
+                  </p>
+                </section>
+              </li>
+              <li>
+                <section class="services-description services-description-3">
+                  <h3>Кредит</h3>
+                  <p>
+                    Залезть в долговую яму стало проще!<br>
+                    Кредитные консультанты придут вам на помощь.
+                  </p>
+                  <button class="red-button" type="button">Отправить заявку</button>
+                </section>
+              </li>
+            </ul>
+<!--         <ul class="services-list">
               <li><button class="services-button services-active" type="button">Доставка</button></li>
               <li><button class="services-button" type="button">Гарантия</button></li>
               <li><button class="services-button" type="button">Кредит</button></li>
@@ -252,7 +297,7 @@
               </p>
               <button class="red-button" type="button">Отправить заявку</button>
             </section>
-          </div>
+ -->          </div>
         </section>
       </div>
 
@@ -356,9 +401,10 @@
 
     <section class="popup-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CGwSi40P" width="940" height="446" frameborder="1" allowfullscreen="true"></iframe>
       <button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
-    <script src="js/feedback-popup.js"></script>
-    <script src="js/map-popup.js"></script>
+    <script src="js/feedback-popup.min.js"></script>
+    <script src="js/map-popup.min.js"></script>
   </body>
 </html>

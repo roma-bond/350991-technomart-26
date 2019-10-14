@@ -997,7 +997,7 @@ header nav {
   background-repeat: no-repeat;
 }
 
-.services-list button {
+.services-list label {
   padding: 16px 21px;
   width: 100%;
   display: block;
@@ -1012,8 +1012,8 @@ header nav {
   border: none;
 }
 
-.services-list button:hover,
-.services-list button:focus {
+.services-list label:hover,
+.services-list label:focus {
   color: #ffffff;
 
   background-color: #293449;
@@ -1021,7 +1021,7 @@ header nav {
   cursor: pointer;
 }
 
-.services-list button:active {
+.services-list label:active {
   color: #32425c;
 
   background-color: #ffffff;
@@ -1029,41 +1029,40 @@ header nav {
   cursor: pointer;
 }
 
-.services-list .services-active {
+#services-1:checked ~ .services-list .services-button:nth-child(1),
+#services-2:checked ~ .services-list .services-button:nth-child(2),
+#services-3:checked ~ .services-list .services-button:nth-child(3) {
   color: #32425c;
 
   background-color: #ffffff;
 }
 
+.services-description-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .services-description {
   padding-bottom: 96px;
   width: 620px;
-}
-
-.services-description:nth-of-type(1) {
-  background-image: url('../img/services_delivery.png');
-  background-repeat: no-repeat;
-  background-position: bottom right;
-
-}
-
-.services-description:nth-of-type(2) {
-  background-image: url('../img/services_guarantee.png');
-  background-repeat: no-repeat;
-  background-position: bottom right;
-
-}
-
-.services-description:nth-of-type(3) {
-  background-image: url('../img/services_credit.png');
-  background-repeat: no-repeat;
-  background-position: bottom right;
-
-}
-
-.services-description:nth-of-type(2),
-.services-description:nth-of-type(3) {
   display: none;
+
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.services-description-1 {
+  background-image: url('../img/services_delivery.png');
+}
+
+.services-description-2 {
+  background-image: url('../img/services_guarantee.png');
+}
+
+.services-description-3 {
+  background-image: url('../img/services_credit.png');
 }
 
 .services-description h3 {
@@ -1081,6 +1080,12 @@ header nav {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+}
+
+#services-1:checked ~ .services-description-list .services-description-1,
+#services-2:checked ~ .services-description-list .services-description-2,
+#services-3:checked ~ .services-description-list .services-description-3 {
+  display: block;
 }
 
 .breadcrumbs {
@@ -2115,6 +2120,7 @@ footer address {
 }
 
 .popup-feedback {
+  z-index: 1000;
   margin-top: -215px;
   margin-left: -310px;
   width: 620px;
@@ -2223,6 +2229,7 @@ footer address {
 }
 
 .popup-confirmation {
+  z-index: 1000;
   margin-top: -142px;
   margin-left: -310px;
   width: 620px;
