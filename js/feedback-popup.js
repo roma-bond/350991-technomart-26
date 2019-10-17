@@ -38,7 +38,7 @@ form.addEventListener('submit', function (evt) {
     evt.preventDefault();
     popup.classList.add('modal-error');
   } else if (isStorageSupport) {
-    localStorage.setItem("userName", userName.value);
+    localStorage.setItem('userName', userName.value);
   }
 });
 
